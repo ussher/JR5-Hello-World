@@ -30,5 +30,10 @@ function jrHelloWorld_meta()
  */
 function jrHelloWorld_init()
 {
+    // magic view - seen at /username/blog/profilehello
+    // you need to register with the view from the blog module 
+    // 
+    jrCore_register_module_feature('jrCore','magic_view','jrHelloWorld','modulehello','view_jrHelloWorld_modulehello');
+
     return true;
 }
