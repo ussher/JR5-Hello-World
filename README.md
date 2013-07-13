@@ -12,10 +12,21 @@ If its not active already activate it from the info tab ```http://YOUR-SITE.com/
 With a slightly more complicated version (it uses templates) visible at ```http://YOUR-SITE.com/hello/saturday``` .
 
 #Profile Hello World
-/username/hello
+YOUR-SITE.com/profilename/hello
 
 #Module Magic View 
-/audio/modulehello
-/blog/modulehello
+YOUR-SITE.com/audio/modulehello
+YOUR-SITE.com/blog/modulehello
+
+#ACP Page
+YOUR-SITE.com/hello/helloadmin
+
+#Via an event listener
+YOUR-SITE.com/core/integrity_check
+
+#Via a smarty function
+{jrHelloWorld_hi}
+With the one optional parameter: 
+{jrHelloWorld_hi spelling="wrong"}
 
 Response to [Forum Question](http://www.jamroom.net/phpBB2/viewtopic.php?p=236618)
